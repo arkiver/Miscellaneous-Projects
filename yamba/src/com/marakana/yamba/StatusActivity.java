@@ -35,8 +35,8 @@ public class StatusActivity extends Activity implements OnClickListener {
 		String status = editStatus.getText().toString();
 
 		try {
-			Twitter twitter = new Twitter("learningandroid", "pass2010");
-			twitter.setAPIRootUrl("http://learningandroid.status.net/api");
+			Twitter twitter = new Twitter("student","password");
+			twitter.setAPIRootUrl("http://yamba.marakana.com/api");
 			twitter.setStatus(status);
 			Toast.makeText(this, R.string.msgStatusUpdatedSuccessfully,
 					Toast.LENGTH_LONG).show();
